@@ -6,6 +6,7 @@
 void check_features::cryptoprim(eosio::checksum256 hash) {
 
 	// just assert the hash against the string "hash"
+	// Hash: d04b98f48e8f8bcc15c6ae5ac050801cd6dcfd428fb5f9e65c4e16e7807340fa
 	eosio::assert_sha256("hash", 4, hash);
 }
 
