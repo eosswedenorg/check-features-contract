@@ -10,7 +10,7 @@ public:
 	void cryptoprim(eosio::checksum256 hash);
 
 	[[eosio::action]]
-	void blocknum();
+	eosio::block_num_t blocknum();
 
 	[[eosio::action]]
 	void codehash();

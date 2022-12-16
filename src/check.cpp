@@ -1,3 +1,4 @@
+#include <eosio/system.hpp>
 #include <check.hpp>
 
 // Test CRYPTO_PRIMITIVES
@@ -10,8 +11,8 @@ void check_features::cryptoprim(eosio::checksum256 hash) {
 
 // Test GET_BLOCK_NUM
 [[eosio::action]]
-void check_features::blocknum() {
-	// TODO
+eosio::block_num_t check_features::blocknum() {
+	return eosio::current_block_number();
 }
 
 // Test GET_CODE_HASH
