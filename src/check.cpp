@@ -6,7 +6,7 @@
 void check_features::cryptoprim(eosio::checksum256 hash) {
 
 	// just assert the hash against the string "hash"
-	eosio::assert_sha256("hash", 5, hash);
+	eosio::assert_sha256("hash", 4, hash);
 }
 
 // Test GET_BLOCK_NUM
